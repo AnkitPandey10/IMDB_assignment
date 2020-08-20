@@ -155,12 +155,30 @@ class _SelectRolePageState extends State<MoviesListPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 10.0),
-                        child: new Image.network(_model.i.imageUrl,width: 150,height: 130,),
+                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 30.0),
+                        child: Container(
+                          height: 130,
+                          width: 130,
+                          decoration: new BoxDecoration(
+                            color: Colors.blueGrey[200],
+                            image: new DecorationImage(
+                              image: NetworkImage(_model.i.imageUrl),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: new BorderRadius.all(Radius.circular(15)),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.blueGrey[300],
+                                blurRadius: 30.0
+                              )
+                            ]
+                          ),
+                        ),
                       ),
                     ],
                   );
-                },),
+                },
+              ),
             ),
           )
           : new Expanded(
@@ -217,18 +235,30 @@ class _SelectRolePageState extends State<MoviesListPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 10.0),
-                        child: new Image.network(_model.i.imageUrl,width: 150,height: 130,),
-                      ),
-                      /*Padding(
-                        padding: EdgeInsets.only(left: 15.0),
-                        child: new Container(
-                          child:
+                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 30.0),
+                        child: Container(
+                          height: 130,
+                          width: 130,
+                          decoration: new BoxDecoration(
+                              color: Colors.blueGrey[200],
+                              image: new DecorationImage(
+                                image: NetworkImage(_model.i.imageUrl),
+                                fit: BoxFit.cover,
+                              ),
+                              borderRadius: new BorderRadius.all(Radius.circular(15)),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.blueGrey[300],
+                                    blurRadius: 30.0
+                                )
+                              ]
+                          ),
                         ),
-                      ),*/
+                      ),
                     ],
                   );
-                },),
+                },
+              ),
             ),
           )
         ],

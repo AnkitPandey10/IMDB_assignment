@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'ApiCall/post_api_service.dart';
 import 'Screen/moviesList.dart';
 

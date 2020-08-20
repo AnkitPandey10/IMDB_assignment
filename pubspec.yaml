@@ -26,6 +26,12 @@ dependencies:
   chopper: ^2.4.2
   provider: ^3.0.0+1
   custom_progress_dialog: ^1.0.3
+  flutter_clean_calendar: ^1.0.2+1
+  datetime_picker_formfield: ^0.4.0
+  intl: ^0.15.8
+
+dependency_overrides:
+  intl: ^0.16.0
 
 dev_dependencies:
   chopper_generator: ^2.4.2
