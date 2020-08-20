@@ -133,21 +133,21 @@ class _SelectRolePageState extends State<MoviesListPage> {
                               SizedBox(height: 15.0,),
                               new Text(
                                 "Genre: "+_model.q,
-                                style: TextStyle(fontWeight: FontWeight.bold, color: shadow, fontSize: 16, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[400], fontSize: 16, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
                               ),
                               SizedBox(height: 10.0,),
                               new Row(
                                 children: <Widget>[
                                   new Text(
                                     _model.rank.toString(),
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: appBarColor, fontSize: 20, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue[800], fontSize: 22, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
                                   ),
                                   SizedBox(width: 5.0,),
                                   new Icon(Icons.star,color: orangeColor,),
                                   new Icon(Icons.star,color: orangeColor,),
                                   new Icon(Icons.star,color: orangeColor,),
-                                  new Icon(Icons.star_border,color: orangeColor,),
-                                  new Icon(Icons.star_border,color: orangeColor,),
+                                  new Icon(Icons.star,color: shadow,),
+                                  new Icon(Icons.star,color: shadow,),
                                 ],
                               ),
                             ],
@@ -155,23 +155,21 @@ class _SelectRolePageState extends State<MoviesListPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 30.0),
-                        child: Container(
-                          height: 130,
-                          width: 130,
-                          decoration: new BoxDecoration(
-                            color: Colors.blueGrey[200],
-                            image: new DecorationImage(
-                              image: NetworkImage(_model.i.imageUrl),
-                              fit: BoxFit.cover,
+                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 35.0),
+                        child: Material(
+                          borderRadius: new BorderRadius.all(Radius.circular(5)),
+                          elevation: 15.0,
+                          child: Container(
+                            height: 130,
+                            width: 120,
+                            decoration: new BoxDecoration(
+                              color: Colors.blueGrey[200],
+                              image: new DecorationImage(
+                                image: NetworkImage(_model.i.imageUrl),
+                                fit: BoxFit.fill,
+                              ),
+                              borderRadius: new BorderRadius.all(Radius.circular(5)),
                             ),
-                            borderRadius: new BorderRadius.all(Radius.circular(15)),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.blueGrey[300],
-                                blurRadius: 30.0
-                              )
-                            ]
                           ),
                         ),
                       ),
@@ -213,21 +211,21 @@ class _SelectRolePageState extends State<MoviesListPage> {
                               SizedBox(height: 15.0,),
                               new Text(
                                 "Genre: "+_model.q,
-                                style: TextStyle(fontWeight: FontWeight.bold, color: shadow, fontSize: 16, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
+                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey[400], fontSize: 16, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
                               ),
                               SizedBox(height: 10.0,),
                               new Row(
                                 children: <Widget>[
                                   new Text(
                                     _model.rank.toString(),
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: appBarColor, fontSize: 20, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue[800], fontSize: 22, fontFamily: "SFProText-Regular", letterSpacing: 0.3),
                                   ),
                                   SizedBox(width: 5.0,),
                                   new Icon(Icons.star,color: orangeColor,),
                                   new Icon(Icons.star,color: orangeColor,),
                                   new Icon(Icons.star,color: orangeColor,),
-                                  new Icon(Icons.star_border,color: orangeColor,),
-                                  new Icon(Icons.star_border,color: orangeColor,),
+                                  new Icon(Icons.star,color: shadow,),
+                                  new Icon(Icons.star,color: shadow,),
                                 ],
                               ),
                             ],
@@ -235,23 +233,21 @@ class _SelectRolePageState extends State<MoviesListPage> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 30.0),
-                        child: Container(
-                          height: 130,
-                          width: 130,
-                          decoration: new BoxDecoration(
+                        padding: EdgeInsets.only(top:deviceHeight*0.03,left: 35.0),
+                        child: Material(
+                          borderRadius: new BorderRadius.all(Radius.circular(5)),
+                          elevation: 15.0,
+                          child: Container(
+                            height: 130,
+                            width: 120,
+                            decoration: new BoxDecoration(
                               color: Colors.blueGrey[200],
                               image: new DecorationImage(
                                 image: NetworkImage(_model.i.imageUrl),
-                                fit: BoxFit.cover,
+                                fit: BoxFit.fill,
                               ),
-                              borderRadius: new BorderRadius.all(Radius.circular(15)),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Colors.blueGrey[300],
-                                    blurRadius: 30.0
-                                )
-                              ]
+                              borderRadius: new BorderRadius.all(Radius.circular(5)),
+                            ),
                           ),
                         ),
                       ),
