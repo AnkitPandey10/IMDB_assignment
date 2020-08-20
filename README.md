@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flutterassignment
 
 A new Flutter application.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# IMDB_assignment
+Assignment Project 
+>>>>>>> c7f1471c9c1d2bd2057ad31ec22969bee6f9d455
